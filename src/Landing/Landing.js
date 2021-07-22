@@ -1,6 +1,7 @@
 import React from 'react';
 import  { Redirect } from 'react-router-dom'    
 import { useHistory } from "react-router-dom";
+import Button from '@material-ui/core/Button';
 
 
 
@@ -18,8 +19,8 @@ export default function Landing(props) {
             <div>
                 <p>Shishira Nataraj</p>
                 <h1>Truck management task</h1>
-                <button onClick={redirectDashboard}>Enter Dashboard</button>
-                <button onClick={redirectTrack}>Track vehicle</button>
+                <Button variant="contained" className="button" color="primary" onClick={redirectDashboard}>Go to dashboard</Button>
+                <Button variant="contained" className="button" color="primary" onClick={redirectTrack}>Track Vehicle</Button>
             </div>
         </div>
     )

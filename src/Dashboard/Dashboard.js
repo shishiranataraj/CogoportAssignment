@@ -1,4 +1,5 @@
 import React,  { useState }  from 'react'
+import { useHistory } from "react-router-dom";
 import "./Dashboard.css";
 import { DataGrid } from '@material-ui/data-grid';
 import {truckData} from "../Trucks";
@@ -9,6 +10,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 // const columns = [ "truckId" , "driverID", "status", "max_km", "city_located", "max_load" ];
 
 
@@ -66,13 +68,14 @@ const columns = [
   
 
 export default function Dashboard() {
+  let history = useHistory();
     const obj = [];
     const [visible, setVisible] = useState(false);
     const [selected_origin_city,setSelected_origin_city]= useState('');
     const [selected_destination_city,setSelected_destination_city] = useState('');
     const [selected_row,setSelected_row] = useState('');
-    const [load, setLoad] = useState('');
-    const [errorFlag,setErrorFlag] = useState(false);
+    // const [load, setLoad] = useState('');
+    // const [errorFlag,setErrorFlag] = useState(false);
     
     const handleChangeOriginCity = (event) => {
         setSelected_origin_city(event.target.value);
@@ -86,6 +89,10 @@ export default function Dashboard() {
        
        
       };
+      const handleRedirect = () => {
+        history.push("/")
+    }
+  
       
     // const handleChangeSelectedRow = (event) => {
     //     setSelected_row(event.target.value);
@@ -98,8 +105,7 @@ export default function Dashboard() {
             }
            
         }
-         return(
-                
+         return(   
             <DataGrid
             rows={obj}
             columns={columns}
@@ -113,9 +119,7 @@ export default function Dashboard() {
           />
          
         )
-
-        
-    }
+       }
    
     const Filters = () =>{
       
@@ -123,39 +127,38 @@ export default function Dashboard() {
          return(
         <div className="filters">
        
-        <InputLabel id="demo-controlled-open-select-label">Select Origin City</InputLabel>
-        <Select
-        labelId="demo-controlled-open-select-label"
-        id="demo-controlled-open-select" 
-        value={selected_origin_city}
-        onChange={handleChangeOriginCity}
-      > 
-      <MenuItem value="">
-      <em>None</em>
-      </MenuItem>
-        {
-        truckData.map((result) => (
-        <MenuItem value={result.city_located}>{result.city_located}</MenuItem>
-        ))}
-        </Select>
-        <InputLabel id="demo-controlled-open-select-label">Select Destination City</InputLabel>
-        <Select
-        labelId="demo-controlled-open-select-label"
-        id="demo-controlled-open-select" 
-        value={selected_destination_city}
-        onChange={handleChangeDestinationCity}
-      > 
-      <MenuItem value="">
-      <em>None</em>
-      </MenuItem>
-        {
-        truckData.map((result) => (
-        <MenuItem value={result.destination}>{result.destination}</MenuItem>
-        ))}
-  
-  </Select>
-  
-  </div>
+          <InputLabel id="demo-controlled-open-select-label">Select Origin City</InputLabel>
+          <Select
+            labelId="demo-controlled-open-select-label"
+            id="demo-controlled-open-select" 
+            value={selected_origin_city}
+            onChange={handleChangeOriginCity}
+           > 
+              <MenuItem value="">
+                <em>None</em>
+              </MenuItem>
+              {
+              truckData.map((result) => (
+              <MenuItem value={result.city_located}>{result.city_located}</MenuItem>
+              ))}
+          </Select>
+          <InputLabel id="demo-controlled-open-select-label">Select Destination City</InputLabel>
+          <Select
+              labelId="demo-controlled-open-select-label"
+              id="demo-controlled-open-select" 
+              value={selected_destination_city}
+              onChange={handleChangeDestinationCity}
+            > 
+              <MenuItem value="">
+              <em>None</em>
+              </MenuItem>
+              {
+              truckData.map((result) => (
+              <MenuItem value={result.destination}>{result.destination}</MenuItem>
+              ))}
+    
+             </Select>
+         </div>
          )
          }
     }
@@ -174,6 +177,7 @@ export default function Dashboard() {
                 <p> Please select criteria to display available trucks</p>
                 <ErrorComponent />
                 <Filters />
+                <Button variant="contained" className="button" color="primary" onClick={handleRedirect}>Take me home</Button>
       </div>
     )
 }
