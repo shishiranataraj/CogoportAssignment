@@ -1,4 +1,10 @@
+## About the Exercise/Assignment
+This was a internship applicant assignment for Cogoport focused in the domain of frontend web development. The assignment is to search, book and track   a group of consignment vehicles. Here, from a list of trucks, we can look at the list of trucks, check it's status and get details of the same. 
+
+This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS, version control using GitHub and hosted using Firebase Hosting.
+
 ## Screenshots
+
 ![landing page](Assets/1.png "Landing page")
 
 ![landing page](Assets/2.png "Dashboard")
@@ -7,10 +13,7 @@
 
 
 
-## About the Exercise/Assignment
-This was a internship applicant assignment for Cogoport focused in the domain of frontend web development. The assignment is to search, book and track   a group of consignment vehicles. Here, from a list of trucks, we can look at the list of trucks, check it's status and get details of the same. 
 
-This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS, version control using GitHub and hosted using Firebase Hosting.
 
 ## Explination about the assignment
 
