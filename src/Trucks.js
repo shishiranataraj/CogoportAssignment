@@ -17,7 +17,7 @@ export const truckData =[
         destination: "Trichy",
         max_load: 100
     },
-    {   id: 2,
+    {   id: 3,
         truckId : 1122,
         driverID: 4523,
         status: "booked",
@@ -26,7 +26,7 @@ export const truckData =[
         destination: "Allepey",
         max_load: 100
     },
-    {   id: 2,
+    {   id: 4,
         truckId : 1123,
         driverID: 4524,
         status: "booked",
@@ -35,7 +35,7 @@ export const truckData =[
         destination: "Mysore",
         max_load: 100
     },
-    {   id: 2,
+    {   id: 5,
         truckId : 1124,
         driverID: 4525,
         status: "booked",
@@ -44,7 +44,7 @@ export const truckData =[
         destination: "Amaravathi",
         max_load: 100
     },
-    {   id: 2,
+    {   id: 6,
         truckId : 1125,
         driverID: 4526,
         status: "Unbooked",

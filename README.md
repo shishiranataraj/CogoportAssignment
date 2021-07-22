@@ -3,7 +3,7 @@
 ## About the Exercise/Assignment
 This was a internship applicant assignment for Cogoport focused in the domain of frontend web development. The assignment is to search, book and track   a group of consignment vehicles. Here, from a list of trucks, we can look at the list of trucks, check it's status and get details of the same. 
 
-This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS and version control using GitHub.
+This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS, version control using GitHub and hosted using Firebase Hosting.
 
 ## Explination about the assignment
 
@@ -28,7 +28,11 @@ Open a browser and navigate to the URL 'localhost:3000' to use the web project.
 
 ## Feedback / Notes ? 
 
-Wish the API provider worked, it would have made the application real dynamic and much more functional. 
+Wish the API provider worked, it would have made the application real dynamic and much more functional.
+
+I generally spend most of my time first desiging and collecting the requirement and less time actually coding. My thought process began at what the functionality of the project should be and then what I can use to facilitate them.
+
+Making my json data compatible to MaterialUI components was a bit challenging and frustrating. 
 
 ## Anything else I would to share? 
 
@@ -37,7 +41,7 @@ Hmm, I felt the assignment could have been a little more intuitive and design ce
 Being a self-taught developer, guidance is something that is lacking and that kills motivation sometimes. With a guide, as in this project, the motivation remains constant and helps me push myself get the gears turning.
 
 If I get a oppurtunity to join Cogoport, I assure I will remain passionate and open to learning! 
-
+        
 It was a enjoyable project, thank you Priyanshu from Cogoport! 😊
 
 
