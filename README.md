@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+## Screenshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Exercise/Assignment
+This was a internship applicant assignment for Cogoport focused in the domain of frontend web development. The assignment is to search, book and track   a group of consignment vehicles. Here, from a list of trucks, we can look at the list of trucks, check it's status and get details of the same. 
 
-## Available Scripts
+This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS and version control using GitHub.
 
-In the project directory, you can run:
+## Explination about the assignment
 
-### `yarn start`
+Upon opening the project on the browser, we can see the landing page, from where we can do one of two thing: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. View the dashboard
+2. Track the already booked vehicle. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    1. The dashboard : Has dropdowns for all the source cities and destination cities. Upon selection, we can see all the available trucks in the table. 
 
-### `yarn test`
+    2. Tracking: This is used when the user already has booked a vehicle and has the assigned truck ID to perform a query in as to see the status of the assigned truck.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to download and run the project?
 
-### `yarn build`
+Clone the repository from GitHub onto your local machine using the 'git clone "url" ' command on your terminal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open the repository in your terminal and enter 'npm install' to install all the packages and depencies of the project. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once installed, enter 'npm start' to start the project on a server, typically on the port 3000. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open a browser and navigate to the URL 'localhost:3000' to use the web project.
 
-### `yarn eject`
+## Feedback / Notes ? 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Wish the API provider worked, it would have made the application real dynamic and much more functional. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Anything else I would to share? 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Hmm, I felt the assignment could have been a little more intuitive and design centric. Nonetheless, it was great fun to challenge myself and learn more things parallely. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Being a self-taught developer, guidance is something that is lacking and that kills motivation sometimes. With a guide, as in this project, the motivation remains constant and helps me push myself get the gears turning.
 
-## Learn More
+If I get a oppurtunity to join Cogoport, I assure I will remain passionate and open to learning! 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It was a enjoyable project, thank you Priyanshu from Cogoport! 😊
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
