@@ -32,7 +32,7 @@ export default function Track() {
             obj.push( truckData[i])
             }
         }
-        setId(obj[0].id);
+        setId(obj[0].truckId);
         setCity_located(obj[0].city_located);
         setDestination(obj[0].destination);
         setStatus(obj[0].status);
