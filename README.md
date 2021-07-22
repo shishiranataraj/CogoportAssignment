@@ -3,6 +3,9 @@ This was a internship applicant assignment for Cogoport focused in the domain of
 
 This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS, version control using GitHub and hosted using Firebase Hosting.
 
+
+Link to the hosted site: https://cogoport-hosting.web.app/track
+
 ## Screenshots
 
 ![landing page](Assets/1.png "Landing page")
@@ -10,8 +13,6 @@ This was implemented using ReactJS framework, HTML, CSS, MaterialUI, NodeJS, ver
 ![landing page](Assets/2.png "Dashboard")
 
 ![landing page](Assets/3.png "Track Vehicle")
-
-
 
 
 
